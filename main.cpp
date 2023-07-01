@@ -14,7 +14,15 @@ int main() {
     }
 
     // Логика завершения игры и объявления победителя
-    // ...
+    if (player1.getHealth() <= 0 && player2.getHealth() <= 0) {
+        std::cout << "Ничья!" << std::endl;
+    }
+    else if (player1.getHealth() <= 0) {
+        std::cout << "Игрок 2 победил!" << std::endl;
+    }
+    else {
+        std::cout << "Игрок 1 победил!" << std::endl;
+    }
 
     return 0;
 }
